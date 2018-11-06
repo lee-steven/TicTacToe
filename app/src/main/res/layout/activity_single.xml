@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TableLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:text="" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        android:paddingTop="10dp"
+        app:layout_constraintRight_toRightOf="@id/tie"
+        android:text="PLAYER"
+        android:textSize="20dp"
+        android:typeface="normal"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/player"
+        app:layout_constraintRight_toRightOf="@id/computer"
+        app:layout_constraintHorizontal_bias="0.475"
+        android:paddingTop="10dp"
+        android:text="TIE"
+        android:textSize="20dp"
+        android:typeface="normal"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/computer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tie"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        android:paddingTop="10dp"
+        android:text="COMPUTER"
+        android:textSize="20dp"
+        android:typeface="normal"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player" />
+
+    <TextView
+        android:id="@+id/tieScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tie"
+        app:layout_constraintLeft_toLeftOf="@id/playerScore"
+        app:layout_constraintRight_toRightOf="@id/computerScore"
+        app:layout_constraintHorizontal_bias="0.52"
+        android:text="0"
+        android:textSize="20dp"
+        android:typeface="normal"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/computerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/computer"
+        app:layout_constraintLeft_toLeftOf="@id/tie"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        android:text="0"
+        android:textSize="20dp"
+        android:typeface="normal"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+</android.support.constraint.ConstraintLayout>
